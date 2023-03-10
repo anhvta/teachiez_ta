@@ -2,7 +2,7 @@
     var version = '1.0.1';
     var sessionId = getSessionId();
     var apiKey = null;
-    var apiUrl = 'http://crm.test/api/track';
+    var apiUrl = 'http://171.244.10.38/api/v1/track';
     if (window.Teachiez_TA) {
         console.warn('Teachiez_TA is already loaded.');
         return;

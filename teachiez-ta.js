@@ -1,8 +1,9 @@
 (function(window) {
-    var version = '1.0.1';
+    var version = '1.0.4';
     var sessionId = getSessionId();
+    let userId = null;
     var apiKey = null;
-    var apiUrl = 'http://171.244.10.38/api/v1/track';
+    var apiUrl = 'https://chun.website/api/v1/track';
     if (window.Teachiez_TA) {
         console.warn('Teachiez_TA is already loaded.');
         return;

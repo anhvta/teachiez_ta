@@ -274,23 +274,23 @@
   }       
     // Attach event listeners to track user behavior
   window.addEventListener('load', function() {
-    trackEvent('event_view', 'first visit','');
-    startCountTimeShowPopup();
-    popups();
-    addEventIntoLinks();
-    addEventIntoButtons();
+    // trackEvent('event_view', 'first visit','');
+    // startCountTimeShowPopup();
+    // popups();
+    // addEventIntoLinks();
+    // addEventIntoButtons();
 
-    const formSelectors = document.querySelectorAll('form');
-    formSelectors.forEach((form) => {
-        form.addEventListener('submit', function(){
-            var formData = new FormData(this);
-            var formValues = {};
-            for (var pair of formData.entries()) {
-                formValues[pair[0]] = pair[1];
-            }
-            trackEvent('event_submission', formValues,'');
-        });
-    });
+    // const formSelectors = document.querySelectorAll('form');
+    // formSelectors.forEach((form) => {
+    //     form.addEventListener('submit', function(){
+    //         var formData = new FormData(this);
+    //         var formValues = {};
+    //         for (var pair of formData.entries()) {
+    //             formValues[pair[0]] = pair[1];
+    //         }
+    //         trackEvent('event_submission', formValues,'');
+    //     });
+    // });
 
   });
   window.Teachiez_TA = {
